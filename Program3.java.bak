@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Program3
+{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int costPrice = sc.nextInt();
+		double tax;
+		if(costPrice > 100000) {
+			tax = (costPrice/100)*15;
+			System.out.println(tax);
+		}
+	}
+}

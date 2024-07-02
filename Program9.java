@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Program9
+{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the hrs to completed to work : ");
+		int workHrs = sc.nextInt();		
+		if((workHrs <= 3)){
+			System.out.println("Highly Efficient");
+		} else if((workHrs > 3) && (workHrs <= 4)){
+			System.out.println("Observes to imporove speed");
+		} else if((workHrs > 4) && (workHrs <= 5)){
+			System.out.println("Give training to imporove speed");
+		} else if((workHrs > 5)){
+			System.out.println("Employee should leave the company");
+		} else {
+			System.out.println("Enter the valid Hours");
+		}
+	}
+}

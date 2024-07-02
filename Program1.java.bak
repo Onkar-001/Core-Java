@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Program1
+{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		if(x>=0 && y>=0){
+			System.out.println("I st quadrant");
+		} else if(x >= 0 && y < 0) {
+			System.out.println("II nd quadrant");	
+		} else if (x < 0 && y < 0)
+		{
+			System.out.println("III rd quadrant");
+		} else {
+			System.out.println("Iv th quadrant");
+		}
+	}
+}
