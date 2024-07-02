@@ -1,13 +1,14 @@
 import java.util.Scanner;
-public class ProfitLoss{
-	public static void main(String[] args){
-	int costPrice, sellPrice;
-	Scanner sc = new Scanner(System.in);
-	System.out.println("Enter the Cost Price");
-	costPrice = sc.nextInt();
-	System.out.println("Enter the Selling Price");
-	sellPrice = sc.nextInt();
-	String str  = (costPrice < sellPrice) ? "You are in Profit" : "You are in Loss";
-	System.out.println(str);
+class ProfitLoss{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the cost price");
+		int costPrice = sc.nextInt();
+		System.out.println("\n Enter the selling price");
+		int sellPrice = sc.nextInt();
+		if(sellPrice > costPrice)
+			System.out.println("Profit");
+		else
+			System.out.println("Loss");
 	}
 }
