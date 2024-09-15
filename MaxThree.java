@@ -1,15 +1,22 @@
 import java.util.Scanner;
-public class MaxThree {
+class maxThree{
 	public static void main(String[] args){
-	Scanner sc = new Scanner(System.in);
-	int Num1, Num2, Num3;
-	System.out.println("Enter first number");
-	Num1 = sc.nextInt();
-	System.out.println("Enter second number");
-	Num2 = sc.nextInt();
-	System.out.println("Enter third number");
-	Num3 = sc.nextInt();
-	String str = (Num1 >= Num2 && Num1 >= Num3) ? "First Number is greater" : (Num2 >= Num1 && Num2 >= Num3) ? "Second Number is greater" : "Third Number is greater";
-	System.out.println(str);
+		int num1, num2, num3;
+		Scanner sc = new Scanner(System.in);		
+		System.out.println("Enter the first number: ");
+		num1 = sc.nextInt();
+		System.out.println("Enter the second number: ");
+		num2 = sc.nextInt();
+		System.out.println("Enter the third number: ");
+		num3 = sc.nextInt();
+
+		if(num1>=num2 && num1 >= num3){
+			System.out.println("Num1 is greater");
+		} else if(num2>=num1 && num2 >= num3) {
+			System.out.println("Num2 is greater");
+		} else {
+			System.out.println("Num3 is greater");
+	}
 	}
 }
+
